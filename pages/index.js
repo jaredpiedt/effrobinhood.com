@@ -60,6 +60,10 @@ const Home = () => (
       only meaning of existence is to protect the interests of the extremely wealthy. 
     </Text>
 
+    <Text marginBottom='1rem'>
+      <Link href='https://www.reddit.com/r/wallstreetbets/comments/l6x130/class_action_against_robinhood_allowing_people_to/' textDecoration='underline' target='_blank'>Encourage a class action lawsuit</Link>
+    </Text>
+
     <Heading as='h1' marginTop='4rem' marginBottom='3rem' textAlign='center'>
       The power of the people: migrating away from robinhood
     </Heading>
@@ -96,84 +100,59 @@ const Home = () => (
     </Heading>
 
     <Heading as='h3' id='Coinbase' marginBottom='1rem' size='lg'>
-    <a href="https://www.coinbase.com/" target="_blank">Coinbase</a>
+    <Link href="https://www.coinbase.com/" target="_blank" textDecoration='underline'>Coinbase</Link>
     </Heading>
 
-    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList marginBottom='1rem'>
       <ListItem>Largest U.S.-based cryptocurrency exchange, trading more than 30 cryptocurrencies</ListItem>
       <ListItem>Great User Interface</ListItem>
       <ListItem>Easy to use and secure mobile app</ListItem>
-    </UnorderedList>
-    
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList marginBottom='1rem'>
       <ListItem>Confusing fee's that are sometimes higher than competitors</ListItem>
       <ListItem>Customer support is lacking and won't hold a flame to the larger players in the industry</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='E*Trade' marginBottom='1rem' size='lg'>
-    <a href="https://etrade.com/" target="_blank">E*Trade</a>
+    <Link href="https://etrade.com/" target="_blank" textDecoration='underline'>E*Trade</Link>
     </Heading>
 
-    <Text marginBottom='1rem'>Pro's</Text>
-    <UnorderedList>
-    </UnorderedList>
-    
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList>
+    <UnorderedList marginBottom='1rem'>
+      <ListItem>Easy-to-use tools.</ListItem>
+      <ListItem>Excellent customer support.</ListItem>
+      <ListItem>Great user interface on both mobile and web</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='Fidelity' marginBottom='1rem' size='lg'>
-      <a href="https://www.fidelity.com/" target="_blank">Fidelity</a>
+      <Link href="https://www.fidelity.com/" target="_blank" textDecoration='underline'>Fidelity</Link>
     </Heading>
 
-    <Text marginBottom='1rem'>Pro's</Text>
-    <UnorderedList>
+    <UnorderedList marginBottom='1rem'>
       <ListItem>Decent user interface via the web as well as mobile app</ListItem>
-    </UnorderedList>
-    
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList>
       <ListItem>Have to apply for margin trading / options trading, which takes time and apparently money</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='Public' marginBottom='1rem' size='lg'>
-      <a href="https://public.com" target="_blank">Public</a>
+      <Link href="https://public.com" target="_blank" textDecoration='underline'>Public</Link>
     </Heading>
 
-    <Text marginBottom='1rem'>Pro's</Text>
-    <UnorderedList>
-    </UnorderedList>
-    
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList>
+    <UnorderedList marginBottom='1rem'>
+      <ListItem>Can trade in slices of a stock</ListItem>
+      <ListItem>Commission-free</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='SoFi' marginBottom='1rem' size='lg'>
-      <a href="https://www.sofi.com/invest" target="_blank">SoFi</a>
+      <Link href="https://www.sofi.com/invest" target="_blank" textDecoration='underline'>SoFi</Link>
     </Heading>
 
-    <Text marginBottom='1rem'>Pro's</Text>
-    <UnorderedList>
+    <UnorderedList marginBottom='1rem'>
       <ListItem>Not robinhood</ListItem>
-    </UnorderedList>
-    
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList>
       <ListItem>SoFi is trying to do wayyyyy more than investing, so their investing platform isn't the sharpest as they don't focus on that exclusively</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='Vanguard' marginBottom='1rem' size='lg'>
-      <a href="https://investor.vanguard.com/home" target="_blank">Vanguard</a>
+      <Link href="https://investor.vanguard.com/home" target="_blank" textDecoration='underline'>Vanguard</Link>
     </Heading>
-    
-    <Text marginBottom='1rem'>Pro's</Text>
-    <UnorderedList>
-    </UnorderedList>
 
-    <Text marginBottom='1rem'>Con's</Text>
-    <UnorderedList>
+    <UnorderedList marginBottom='1rem'>
       <ListItem>An absolute nightmare of a web experience, grabbing documents or even logging in isn't intuitive</ListItem>
     </UnorderedList>
 
