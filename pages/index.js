@@ -88,7 +88,7 @@ const Home = () => (
     </Heading>
 
     <Heading as='h3'>
-      Coinbase
+    <a href="https://www.coinbase.com/" target="_blank">Coinbase</a>
     </Heading>
 
     <Text>Pro's</Text>
@@ -105,7 +105,7 @@ const Home = () => (
     </UnorderedList>
 
     <Heading as='h3'>
-      Fidelity
+    <a href="https://etrade.com/" target="_blank">E*Trade</a>
     </Heading>
 
     <Text>Pro's</Text>
@@ -117,7 +117,7 @@ const Home = () => (
     </UnorderedList>
 
     <Heading as='h3'>
-      SoFi
+      <a href="https://www.fidelity.com/" target="_blank">Fidelity</a>
     </Heading>
 
     <Text>Pro's</Text>
@@ -129,19 +129,19 @@ const Home = () => (
     </UnorderedList>
 
     <Heading as='h3'>
-      Vanguard
+      <a href="https://public.com" target="_blank">Public</a>
     </Heading>
-    
+
     <Text>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
-
+    
     <Text>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
     <Heading as='h3'>
-      E-Trade
+      <a href="https://www.sofi.com/" target="_blank">SoFi</a>
     </Heading>
 
     <Text>Pro's</Text>
@@ -151,6 +151,19 @@ const Home = () => (
     <Text>Con's</Text>
     <UnorderedList>
     </UnorderedList>
+
+    <Heading as='h3'>
+      <a href="https://investor.vanguard.com/home" target="_blank">Vanguard</a>
+    </Heading>
+    
+    <Text>Pro's</Text>
+    <UnorderedList>
+    </UnorderedList>
+
+    <Text>Con's</Text>
+    <UnorderedList>
+    </UnorderedList>
+
   </Box>
 )
 
