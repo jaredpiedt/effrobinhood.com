@@ -130,10 +130,12 @@ const Home = () => (
 
     <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
+      <ListItem>Decent user interface via the web as well as mobile app</ListItem>
     </UnorderedList>
     
     <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
+      <ListItem>Have to apply for margin trading / options trading, which takes time and apparently money</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='Public' marginBottom='1rem' size='lg'>
@@ -149,15 +151,17 @@ const Home = () => (
     </UnorderedList>
 
     <Heading as='h3' id='SoFi' marginBottom='1rem' size='lg'>
-      <a href="https://www.sofi.com/" target="_blank">SoFi</a>
+      <a href="https://www.sofi.com/invest" target="_blank">SoFi</a>
     </Heading>
 
     <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
+      <ListItem>Not robinhood</ListItem>
     </UnorderedList>
     
     <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
+      <ListItem>SoFi is trying to do wayyyyy more than investing, so their investing platform isn't the sharpest as they don't focus on that exclusively</ListItem>
     </UnorderedList>
 
     <Heading as='h3' id='Vanguard' marginBottom='1rem' size='lg'>
@@ -170,6 +174,7 @@ const Home = () => (
 
     <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
+      <ListItem>An absolute nightmare of a web experience, grabbing documents or even logging in isn't intuitive</ListItem>
     </UnorderedList>
 
   </Box>
