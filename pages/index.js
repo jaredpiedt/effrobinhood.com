@@ -111,6 +111,18 @@ const Home = () => (
     </UnorderedList>
 
     <Heading as='h3'>
+      <a href="https://public.com">Public</a>
+    </Heading>
+
+    <Text>Pro's</Text>
+    <UnorderedList>
+    </UnorderedList>
+    
+    <Text>Con's</Text>
+    <UnorderedList>
+    </UnorderedList>
+
+    <Heading as='h3'>
       SoFi
     </Heading>
 
