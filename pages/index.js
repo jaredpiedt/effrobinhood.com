@@ -87,6 +87,18 @@ const Home = () => (
     </Heading>
 
     <Heading as='h3'>
+      Coinbase
+    </Heading>
+
+    <Text>Pro's</Text>
+    <UnorderedList>
+    </UnorderedList>
+    
+    <Text>Con's</Text>
+    <UnorderedList>
+    </UnorderedList>
+
+    <Heading as='h3'>
       Fidelity
     </Heading>
 
