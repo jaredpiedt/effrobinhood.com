@@ -7,6 +7,7 @@ import {
   Image,
   UnorderedList,
   ListItem,
+  List,
 } from '@chakra-ui/react'
 
 const Home = () => (
@@ -92,10 +93,15 @@ const Home = () => (
 
     <Text>Pro's</Text>
     <UnorderedList>
+      <ListItem>Largest U.S.-based cryptocurrency exchange, trading more than 30 cryptocurrencies</ListItem>
+      <ListItem>Great User Interface</ListItem>
+      <ListItem>Easy to use and secure mobile app</ListItem>
     </UnorderedList>
     
     <Text>Con's</Text>
     <UnorderedList>
+      <ListItem>Confusing fee's that are sometimes higher than competitors</ListItem>
+      <ListItem>Customer support is lacking and won't hold a flame to the larger players in the industry</ListItem>
     </UnorderedList>
 
     <Heading as='h3'>
