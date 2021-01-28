@@ -7,8 +7,10 @@ import {
   Image,
   UnorderedList,
   ListItem,
-  List,
+  Link,
 } from '@chakra-ui/react'
+
+import Header from '../components/header'
 
 const Home = () => (
   <Box 
@@ -23,7 +25,7 @@ const Home = () => (
     <Flex flexDirection='row' justifyContent='center'>
       <Image src='/middle_finger.png' width={['8rem', '20rem']} height={['8rem', '20rem']}/>
       <Flex flexDirection='column' width={['10rem', '35rem']} justifyContent='space-around'>
-        <Image src='/robinhood_logo.png' height={['4rem', '50rem']} />
+        <Image src='/robinhood_logo.png' height={['4rem', '10rem']} />
       </Flex>
     </Flex>
 
@@ -32,135 +34,141 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Heading as='h1' size='4xl' textAlign='center'>
-      Eff robinhood.com
-    </Heading>
-    <Text textAlign='center'>(<a href='https://github.com/jaredpiedt/effrobinhood.com'>open source, contributions encouraged</a> to provide the best experience of effing robinhood)</Text>
+    <Header />
 
-    <Heading as='h2' marginTop='5rem'>
+    <Heading as='h1' size='2xl' textAlign='center' marginBottom='2rem'>
+      Eff robinhood.com - find alternatives
+    </Heading>
+    <Text textAlign='center'>(<Link href='https://github.com/jaredpiedt/effrobinhood.com' textDecoration='underline'>open source, contributions encouraged</Link> to provide the best experience of effing robinhood)</Text>
+
+    <Heading as='h2' marginTop='5rem' marginBottom='1rem'>
       Background
     </Heading>
 
-    <Text>
+    <Text marginBottom='1rem'>
       This app exclusively exists to stick it to robinhood.com, a website that supposedly was created to stick
       up for the masses and allow the populus to invest with the same resources as the hedge fund titans.
     </Text>
 
-    <Text>
+    <Text marginBottom='1rem'>
       This was proved false on January 28th, 2021, when robinhood, after r/wallstreetbets short squeezed 10B+
       out of hedge funds on $AMC, $GME, and others, froze trading "except to close out positions". Utter bull shit.
     </Text>
 
-    <Text>
+    <Text marginBottom='1rem'>
       Who did this benefit? Only the hedge funds with massive short positions. Once again, a corporation proves it's
       only meaning of existence is to protect the interests of the extremely wealthy. 
     </Text>
 
-    <Heading as='h2' marginTop='4rem'>
+    <Heading as='h1' marginTop='4rem' marginBottom='3rem' textAlign='center'>
       The power of the people: migrating away from robinhood
     </Heading>
 
-    <Text>
+    <Text marginBottom='1rem'>
       Robinhood did it's job, it lowered transactional fee's accross all platforms. Then they turned their back on the 
       people that built them. This doc will exclusively exist to provide guides on how to move assets / money to other 
       trading platforms, and the benefits of each of those trading platforms.
     </Text>
 
-    <Heading as='h3'>
-      Transfering assets out of robinhood without selling
-    </Heading>
-    <UnorderedList>
-      <ListItem>You can transfer stocks and cash to other brokerages through ACATS (Automated Customer Account Transfer Service) transfer. If you want to keep your Robinhood account, you can initiate a partial transfer. Otherwise, you can initiate a full transfer, and we’ll close your account once the process is complete.</ListItem>
-      <ListItem>Note that there is a $75 fee to transfer your assets out of Robinhood, whether as a partial or full transfer. (eff that)</ListItem>
-      <ListItem>To begin the process, you'll need to contact your other brokerage and have them initiate the transfer. They’ll submit the transfer instructions to our clearing partner to transfer over your assets and funds.</ListItem>
-    </UnorderedList>
+    <Box marginBottom='2rem'>
+      <Heading as='h3' marginBottom='1rem' size='lg'>
+        Transfering assets out of robinhood without selling
+      </Heading>
+      <UnorderedList marginBottom='1rem'>
+        <ListItem>You can transfer stocks and cash to other brokerages through ACATS (Automated Customer Account Transfer Service) transfer. If you want to keep your Robinhood account, you can initiate a partial transfer. Otherwise, you can initiate a full transfer, and we’ll close your account once the process is complete.</ListItem>
+        <ListItem>Note that there is a $75 fee to transfer your assets out of Robinhood, whether as a partial or full transfer. (eff that)</ListItem>
+        <ListItem>To begin the process, you'll need to contact your other brokerage and have them initiate the transfer. They’ll submit the transfer instructions to our clearing partner to transfer over your assets and funds.</ListItem>
+      </UnorderedList>
+    </Box>
 
-    <Heading as='h3'>
-      Transferring cash out
-    </Heading>
-    <UnorderedList>
-      <ListItem>Sell all assets</ListItem>
-      <ListItem>Initiate cash transfer to your bank (within settings / transfers portion of the application)</ListItem>
-    </UnorderedList>
+    <Box marginBottom='2rem'>
+      <Heading as='h3' marginBottom='1rem' size='lg'>
+        Transferring cash out
+      </Heading>
+      <UnorderedList marginBottom='1rem'>
+        <ListItem>Sell all assets</ListItem>
+        <ListItem>Initiate cash transfer to your bank (within settings / transfers portion of the application)</ListItem>
+      </UnorderedList>
+    </Box>
 
-    <Heading as='h1'>
+    <Heading as='h1' marginBottom='1rem' textAlign='center' marginBottom='3rem'>
       Trading platform alternatives
     </Heading>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='Coinbase' marginBottom='1rem' size='lg'>
     <a href="https://www.coinbase.com/" target="_blank">Coinbase</a>
     </Heading>
 
-    <Text>Pro's</Text>
-    <UnorderedList>
+    <Text marginBottom='1rem'>Pro's</Text>
+    <UnorderedList marginBottom='1rem'>
       <ListItem>Largest U.S.-based cryptocurrency exchange, trading more than 30 cryptocurrencies</ListItem>
       <ListItem>Great User Interface</ListItem>
       <ListItem>Easy to use and secure mobile app</ListItem>
     </UnorderedList>
     
-    <Text>Con's</Text>
-    <UnorderedList>
+    <Text marginBottom='1rem'>Con's</Text>
+    <UnorderedList marginBottom='1rem'>
       <ListItem>Confusing fee's that are sometimes higher than competitors</ListItem>
       <ListItem>Customer support is lacking and won't hold a flame to the larger players in the industry</ListItem>
     </UnorderedList>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='E*Trade' marginBottom='1rem' size='lg'>
     <a href="https://etrade.com/" target="_blank">E*Trade</a>
     </Heading>
 
-    <Text>Pro's</Text>
+    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
     
-    <Text>Con's</Text>
+    <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='Fidelity' marginBottom='1rem' size='lg'>
       <a href="https://www.fidelity.com/" target="_blank">Fidelity</a>
     </Heading>
 
-    <Text>Pro's</Text>
+    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
     
-    <Text>Con's</Text>
+    <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='Public' marginBottom='1rem' size='lg'>
       <a href="https://public.com" target="_blank">Public</a>
     </Heading>
 
-    <Text>Pro's</Text>
+    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
     
-    <Text>Con's</Text>
+    <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='SoFi' marginBottom='1rem' size='lg'>
       <a href="https://www.sofi.com/" target="_blank">SoFi</a>
     </Heading>
 
-    <Text>Pro's</Text>
+    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
     
-    <Text>Con's</Text>
+    <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
-    <Heading as='h3'>
+    <Heading as='h3' id='Vanguard' marginBottom='1rem' size='lg'>
       <a href="https://investor.vanguard.com/home" target="_blank">Vanguard</a>
     </Heading>
     
-    <Text>Pro's</Text>
+    <Text marginBottom='1rem'>Pro's</Text>
     <UnorderedList>
     </UnorderedList>
 
-    <Text>Con's</Text>
+    <Text marginBottom='1rem'>Con's</Text>
     <UnorderedList>
     </UnorderedList>
 
