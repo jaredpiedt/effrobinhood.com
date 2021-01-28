@@ -20,7 +20,7 @@ const Home = () => (
     backgroundColor='#f5f6fa'
   >
     <Flex flexDirection='row' justifyContent='center'>
-      <Image src='/middle_finger.png' width={['8rem', '20rem']} height='auto'/>
+      <Image src='/middle_finger.png' width={['8rem', '20rem']} height={['8rem', '20rem']}/>
       <Flex flexDirection='column' width={['10rem', '35rem']} justifyContent='space-around'>
         <Image src='/robinhood_logo.png' height={['4rem', '50rem']} />
       </Flex>
