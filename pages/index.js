@@ -47,7 +47,7 @@ const Home = () => (
 
     <Text>
       This was proved false on January 28th, 2021, when robinhood, after r/wallstreetbets short squeezed 10B+
-      out of hedge funds on $AMC, $GME, and others, freezed trading "except to close out positions". Utter bull shit.
+      out of hedge funds on $AMC, $GME, and others, froze trading "except to close out positions". Utter bull shit.
     </Text>
 
     <Text>
