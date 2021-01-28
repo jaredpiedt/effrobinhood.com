@@ -34,7 +34,7 @@ const Home = () => (
     <Heading as='h1' size='4xl' textAlign='center'>
       Eff robinhood.com
     </Heading>
-    <Text textAlign='center'>(open source, contributions encouraged to provide the best experience of effing robinhood)</Text>
+    <Text textAlign='center'>(<a href='https://github.com/jaredpiedt/effrobinhood.com'>open source, contributions encouraged</a> to provide the best experience of effing robinhood)</Text>
 
     <Heading as='h2' marginTop='5rem'>
       Background
