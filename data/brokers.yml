@@ -1,0 +1,56 @@
+# Coinbase
+- name: Coinbase
+  link: https://www.coinbase.com/
+  description:
+  pros:
+    - Largest U.S.-based cryptocurrency exchange, trading more than 30 cryptocurrencies
+    - Great user interface
+    - Easy to use and secure mobile app
+  cons:
+    - Confusing fees that are sometimes higher than competitors
+    - Customer support is lacking and won't hold a flame to the larger players in the industry
+
+# E*Trade
+- name: E*Trade
+  link: https://etrade.com/
+  description:
+  pros:
+    - Easy-to-use tools.
+    - Excellent customer support.
+    - Great user interface on both mobile and web
+  cons:
+
+# Fidelity
+- name: Fidelity
+  link: https://www.fidelity.com/
+  description:
+  pros:
+    - Decent user interface via the web as well as mobile app
+  cons:
+    - Have to apply for margin trading / options trading, which takes time and apparently money
+
+# Public
+- name: Public
+  link: https://public.com
+  description:
+  pros:
+    - Can trade in slices of a stock
+    - Commission-free
+  cons:
+
+# SoFI
+- name: SoFi
+  link: https://www.sofi.com/invest
+  description:
+  pros:
+    - Not robinhood
+    - SoFi is trying to do wayyyyy more than investing, so their investing platform isn't the sharpest as they don't focus on that exclusively
+  cons:
+
+# Vanguard
+- name: Vanguard
+  link: https://investor.vanguard.com/home
+  description:
+  pros:
+  cons:
+    - An absolute nightmare of a web experience, grabbing documents or even logging in isn't intuitive
