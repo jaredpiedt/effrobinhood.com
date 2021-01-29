@@ -1,3 +1,4 @@
+import {Fragment} from 'react'
 import Head from 'next/head'
 import { 
   Heading,
@@ -101,16 +102,16 @@ const Home = () => (
     </Heading>
 
     {brokers.map(b => (
-      <>
+      <Fragment key={b.name}>
         <Heading as="h3" id={b.name} marginBottom='1rem' size='lg'>
           <Link href={b.link} target="_blank" textDecoration='underline'>{b.name}</Link>
         </Heading>
         <UnorderedList marginBottom='1rem'>
           {b.pros?.map(pro => (
-            <ListItem>{pro}</ListItem>
+            <ListItem key={pro}>{pro}</ListItem>
           ))}
         </UnorderedList>
-      </>
+      </Fragment>
     ))}
   </Box>
 )
