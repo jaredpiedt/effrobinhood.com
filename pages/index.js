@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 import Header from '../components/header'
+import brokers from '../data/brokers.yml'
 
 const Home = () => (
   <Box 
@@ -99,63 +100,18 @@ const Home = () => (
       Trading platform alternatives
     </Heading>
 
-    <Heading as='h3' id='Coinbase' marginBottom='1rem' size='lg'>
-    <Link href="https://www.coinbase.com/" target="_blank" textDecoration='underline'>Coinbase</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>Largest U.S.-based cryptocurrency exchange, trading more than 30 cryptocurrencies</ListItem>
-      <ListItem>Great User Interface</ListItem>
-      <ListItem>Easy to use and secure mobile app</ListItem>
-      <ListItem>Confusing fee's that are sometimes higher than competitors</ListItem>
-      <ListItem>Customer support is lacking and won't hold a flame to the larger players in the industry</ListItem>
-    </UnorderedList>
-
-    <Heading as='h3' id='E*Trade' marginBottom='1rem' size='lg'>
-    <Link href="https://etrade.com/" target="_blank" textDecoration='underline'>E*Trade</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>Easy-to-use tools.</ListItem>
-      <ListItem>Excellent customer support.</ListItem>
-      <ListItem>Great user interface on both mobile and web</ListItem>
-    </UnorderedList>
-
-    <Heading as='h3' id='Fidelity' marginBottom='1rem' size='lg'>
-      <Link href="https://www.fidelity.com/" target="_blank" textDecoration='underline'>Fidelity</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>Decent user interface via the web as well as mobile app</ListItem>
-      <ListItem>Have to apply for margin trading / options trading, which takes time and apparently money</ListItem>
-    </UnorderedList>
-
-    <Heading as='h3' id='Public' marginBottom='1rem' size='lg'>
-      <Link href="https://public.com" target="_blank" textDecoration='underline'>Public</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>Can trade in slices of a stock</ListItem>
-      <ListItem>Commission-free</ListItem>
-    </UnorderedList>
-
-    <Heading as='h3' id='SoFi' marginBottom='1rem' size='lg'>
-      <Link href="https://www.sofi.com/invest" target="_blank" textDecoration='underline'>SoFi</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>Not robinhood</ListItem>
-      <ListItem>SoFi is trying to do wayyyyy more than investing, so their investing platform isn't the sharpest as they don't focus on that exclusively</ListItem>
-    </UnorderedList>
-
-    <Heading as='h3' id='Vanguard' marginBottom='1rem' size='lg'>
-      <Link href="https://investor.vanguard.com/home" target="_blank" textDecoration='underline'>Vanguard</Link>
-    </Heading>
-
-    <UnorderedList marginBottom='1rem'>
-      <ListItem>An absolute nightmare of a web experience, grabbing documents or even logging in isn't intuitive</ListItem>
-    </UnorderedList>
-
+    {brokers.map(b => (
+      <>
+        <Heading as="h3" id={b.name} marginBottom='1rem' size='lg'>
+          <Link href={b.link} target="_blank" textDecoration='underline'>{b.name}</Link>
+        </Heading>
+        <UnorderedList marginBottom='1rem'>
+          {b.pros?.map(pro => (
+            <ListItem>{pro}</ListItem>
+          ))}
+        </UnorderedList>
+      </>
+    ))}
   </Box>
 )
 
